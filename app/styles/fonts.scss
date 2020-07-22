@@ -1,0 +1,39 @@
+// FONTS
+
+@font-face {
+  font-family: "SohoGothicPro-Bold";
+  src: url("../fonts/SohoGothicPro-Bold.eot");
+  src: url("../fonts/SohoGothicPro-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/SohoGothicPro-Bold.svg#SohoGothicPro-Bold") format("svg"),
+    url("../fonts/SohoGothicPro-Bold.ttf") format("truetype"),
+    url("../fonts/SohoGothicPro-Bold.woff") format("woff"),
+    url("../fonts/SohoGothicPro-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SohoPro-Medium";
+  src: url("../fonts/SohoPro-Medium.eot");
+  src: url("../fonts/SohoPro-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/SohoPro-Medium.svg#SohoPro-Medium") format("svg"),
+    url("../fonts/SohoPro-Medium.ttf") format("truetype"),
+    url("../fonts/SohoPro-Medium.woff") format("woff"),
+    url("../fonts/SohoPro-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SohoGothicPro-Regular";
+  src: url("../fonts/SohoGothicPro-Regular.eot");
+  src: url("../fonts/SohoGothicPro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/SohoGothicPro-Regular.svg#SohoGothicPro-Regular")
+      format("svg"),
+    url("../fonts/SohoGothicPro-Regular.ttf") format("truetype"),
+    url("../fonts/SohoGothicPro-Regular.woff") format("woff"),
+    url("../fonts/SohoGothicPro-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
