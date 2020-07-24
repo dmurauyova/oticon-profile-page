@@ -17,6 +17,7 @@
       href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
       type="text/css"
     />
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css" />
     <!-- endbuild -->
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css" />
@@ -25,7 +26,7 @@
     <script src="scripts/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
+  <body class="oticon-profile-page">
     <!--[if IE]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
@@ -51,10 +52,15 @@
         class="img-fluid w-100"
       />
     </div>
+
+    <!-- *****PORTFOLIOS***** -->
+
     <div class="section portfolios">
-      <div class="container">
-        <h1>An entire portfolio built on BrainHearing™ technology</h1>
-        <p>
+      <div class="container-fluid">
+        <h1 class="text-center title pt-5 pb-4">
+          An entire portfolio built on BrainHearing™ technology
+        </h1>
+        <p class="text-center description">
           With the Oticon portfolio of products, you can offer all of your
           patients superior technology to meet their needs. Our hearing
           solutions deliver a superb hearing experience for a broad range of
@@ -66,75 +72,760 @@
         </p>
         <div class="portfolio-list d-flex">
           <!-- PORTFOLIO -->
-          <div class="portfolio">
+          <div
+            class="portfolio d-flex flex-column active"
+            data-toggle="collapse"
+            aria-controls="demand-the-best"
+            aria-expanded="true"
+            href="#demand-the-best"
+          >
             <div class="headshot">
-              <img src="" alt="" />
+              <img
+                src="/images/Demand_The_Best_Profile.png"
+                class="img-fluid w-100"
+                alt=""
+              />
             </div>
-            <h5>DEMAND THE BEST</h5>
-            <p>
-              Adults with mild to severe hearing loss <br />
-              Want the best sound quality and performance in difficult listening
-              environments
-            </p>
+            <div class="description">
+              <h5>DEMAND THE BEST</h5>
+              <p>
+                Adults with mild to severe hearing loss <br /><br />
+                Want the best sound quality and performance in difficult
+                listening environments
+              </p>
+            </div>
           </div>
           <!-- /PORTFOLIO -->
 
           <!-- PORTFOLIO -->
-          <div class="portfolio">
+          <div
+            class="portfolio d-flex flex-column"
+            data-toggle="collapse"
+            aria-controls="everyday-essential"
+            aria-expanded="false"
+            href="#everyday-essential"
+          >
             <div class="headshot">
-              <img src="" alt="" />
+              <img
+                src="/images/Everyday_Essential_Profile.png"
+                class="img-fluid w-100"
+                alt=""
+              />
             </div>
-            <h5>EVERYDAY ESSENTIAL</h5>
-            <p>
-              Adults with mild to severe hearing loss <br />
-              Want good performance and are more cost conscious about their
-              hearing solutions
-            </p>
+            <div class="description">
+              <h5>EVERYDAY ESSENTIAL</h5>
+              <p>
+                Adults with mild to severe hearing loss <br /><br />
+                Want good performance and are more cost conscious about their
+                hearing solutions
+              </p>
+            </div>
           </div>
           <!-- /PORTFOLIO -->
 
           <!-- PORTFOLIO -->
-          <div class="portfolio">
+          <div
+            class="portfolio d-flex flex-column"
+            data-toggle="collapse"
+            aria-controls="pediatrics"
+            aria-expanded="false"
+            href="#pediatrics"
+          >
             <div class="headshot">
-              <img src="" alt="" />
+              <img
+                src="/images/Pediatrics_Profile.png"
+                class="img-fluid w-100"
+                alt=""
+              />
             </div>
-            <h5>PEDIATRICS</h5>
-            <p>
-              Ages 0-18 with mild to profound loss <br />
-              Require hearing solutions specifically designed to meet their
-              unique requirements
-            </p>
+            <div class="description">
+              <h5>PEDIATRICS</h5>
+              <p>
+                Ages 0-18 with mild to profound loss <br /><br />
+                Require hearing solutions specifically designed to meet their
+                unique requirements
+              </p>
+            </div>
           </div>
           <!-- /PORTFOLIO -->
 
           <!-- PORTFOLIO -->
-          <div class="portfolio">
+          <div
+            class="portfolio d-flex flex-column"
+            data-toggle="collapse"
+            aria-controls="power-users"
+            aria-expanded="false"
+            href="#power-users"
+          >
             <div class="headshot">
-              <img src="" alt="" />
+              <img
+                src="/images/Power_User_Profile.png"
+                class="img-fluid w-100"
+                alt=""
+              />
             </div>
-            <h5>POWER USERS</h5>
-            <p>
-              Adults with severe to profound loss <br />
-              Require additional power in their hearing solutions
-            </p>
+            <div class="description">
+              <h5>POWER USERS</h5>
+              <p>
+                Adults with severe to profound loss <br /><br />
+                Require additional power in their hearing solutions
+              </p>
+            </div>
           </div>
           <!-- /PORTFOLIO -->
 
           <!-- PORTFOLIO -->
-          <div class="portfolio">
+          <div
+            class="portfolio d-flex flex-column"
+            data-toggle="collapse"
+            aria-controls="single-sided-deafness"
+            aria-expanded="false"
+            href="#single-sided-deafness"
+          >
             <div class="headshot">
-              <img src="" alt="" />
+              <img
+                src="/images/Single_Sided_Deafness_Profile.png"
+                class="img-fluid w-100"
+                alt=""
+              />
             </div>
-            <h5>Single-sided deafness</h5>
-            <p>
-              Adults and children with single-sided deafness <br />
-              Want a fuller, more immersive sound experience
-            </p>
+            <div class="description">
+              <h5>Single-sided deafness</h5>
+              <p>
+                Adults and children with single-sided deafness <br /><br />
+                Want a fuller, more immersive sound experience
+              </p>
+            </div>
           </div>
           <!-- /PORTFOLIO -->
         </div>
       </div>
     </div>
+
+    <!-- *****/PORTFOLIOS***** -->
+
+    <!-- *****DEVICES***** -->
+    <div class="section devices">
+      <div class="container-fluid">
+        <div id="app-toggle" class="portfolio-devices-list">
+          <!-- !!PORTFOLIO DEVICES!! -->
+          <div
+            id="demand-the-best"
+            class="portfolio-devices collapse show animated fadeIn faster"
+            data-parent="#app-toggle"
+          >
+            <h2 class="text-center title pt-5 pb-4">
+              DEMAND THE BEST
+            </h2>
+            <p class="text-center description">
+              Our family of premium products takes the open sound experience to
+              the next level by enabling speech understanding in noisy
+              environments with less listening effort.*
+            </p>
+            <div class="device-list d-flex justify-content-center">
+              <!-- DEVICE -->
+              <div class="device">
+                <div
+                  class="content-wrapper d-flex flex-column align-items-center"
+                >
+                  <h4>Oticon Opn S™</h4>
+                  <img
+                    src="/images/devices/demand-the-best/Oticon_OpnS_Product_Image.png"
+                    alt="Oticon Opn S™"
+                    class="img-fluid w-100"
+                  />
+                  <div class="description text-center">
+                    <h6>Behind the Ear</h6>
+                    <p>
+                      Opn S miniRITE has a discreet design with a single push
+                      button for easy operation of volume and programs. Delivers
+                      speech understanding on par with normal hearing to your
+                      patients.
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-primary">
+                    Select
+                  </button>
+                </div>
+              </div>
+              <!-- /DEVICE -->
+
+              <!-- DEVICE -->
+              <div class="device d-flex flex-column align-items-center">
+                <div
+                  class="content-wrapper d-flex flex-column align-items-center"
+                >
+                  <h4>Oticon Opn S™</h4>
+                  <img
+                    src="/images/devices/demand-the-best/Oticon_OpnS_Recharageable_Product_Image.png"
+                    alt="Oticon Opn S™"
+                    class="img-fluid w-100"
+                  />
+                  <div class="description text-center">
+                    <h6>Behind the Ear Rechargable</h6>
+                    <p>
+                      The Oticon Opn S miniRITE R is a discreet rechargeable
+                      hearing aid style with a lithium-ion battery and
+                      easy-to-use charger.
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-primary">
+                    Select
+                  </button>
+                </div>
+              </div>
+              <!-- /DEVICE -->
+
+              <!-- DEVICE -->
+              <div class="device d-flex flex-column align-items-center">
+                <div
+                  class="content-wrapper d-flex flex-column align-items-center"
+                >
+                  <h4>Oticon Opn S™</h4>
+                  <img
+                    src="/images/devices/demand-the-best/Oticon_Opn_Custom_Product_Image.png"
+                    alt="Oticon Opn S™"
+                    class="img-fluid w-100"
+                  />
+                  <div class="description text-center">
+                    <h6>In the Ear</h6>
+                    <p>
+                      Opn sound quality, in smaller than ever custom styles.
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-primary">
+                    Select
+                  </button>
+                </div>
+              </div>
+              <!-- /DEVICE -->
+            </div>
+          </div>
+          <!-- !!/PORTFOLIO DEVICES!! -->
+
+          <!-- !!PORTFOLIO DEVICES!! -->
+          <div
+            id="everyday-essential"
+            class="portfolio-devices collapse animated fadeIn faster"
+            data-parent="#app-toggle"
+          >
+            <h2 class="text-center title pt-5 pb-4">
+              EVERYDAY ESSENTIAL
+            </h2>
+            <p class="text-center description">
+              Our selection of hearing aids in the essential category features
+              high sound quality, connectivity, and rechargeable styles.
+            </p>
+            <div class="device-list d-flex justify-content-center">
+              <!-- DEVICE -->
+              <div class="device d-flex flex-column align-items-center">
+                <div
+                  class="content-wrapper d-flex flex-column align-items-center"
+                >
+                  <h4>Oticon Ruby</h4>
+                  <img
+                    src="/images/devices/everyday-essentials/Ociton_Ruby_Product_Image.png"
+                    alt="Oticon Ruby"
+                    class="img-fluid w-100"
+                  />
+                  <div class="description text-center">
+                    <h6>Behind the Ear</h6>
+                    <p>
+                      A line of hearing aids designed to improve speech
+                      understanding and give your patients the confidence they
+                      need to live life to the fullest.
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-primary">
+                    Select
+                  </button>
+                </div>
+              </div>
+              <!-- /DEVICE -->
+
+              <!-- DEVICE -->
+              <div class="device d-flex flex-column align-items-center">
+                <div
+                  class="content-wrapper d-flex flex-column align-items-center"
+                >
+                  <h4>Oticon Ruby</h4>
+                  <img
+                    src="/images/devices/everyday-essentials/Ociton_Ruby_Recharageble_Product_Image.png"
+                    alt="Oticon Ruby"
+                    class="img-fluid w-100"
+                  />
+                  <div class="description text-center">
+                    <h6>Behind the Ear Rechargable</h6>
+                    <p>
+                      All the benefits of improved speech understanding from
+                      Ruby, with the added flexibility of a rechargeable style.
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-primary">
+                    Select
+                  </button>
+                </div>
+              </div>
+              <!-- /DEVICE -->
+
+              <!-- DEVICE -->
+              <div class="device d-flex flex-column align-items-center">
+                <div
+                  class="content-wrapper d-flex flex-column align-items-center"
+                >
+                  <h4>Oticon Siya</h4>
+                  <img
+                    src="/images/devices/everyday-essentials/Oticon_Siya_Product_Image.png"
+                    alt="Oticon Siya"
+                    class="img-fluid w-100"
+                  />
+                  <div class="description text-center">
+                    <h6>In the Ear</h6>
+                    <p>
+                      A line of custom style hearing aids that help improve your
+                      patients’ speech understanding.
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-primary">
+                    Select
+                  </button>
+                </div>
+              </div>
+              <!-- /DEVICE -->
+            </div>
+          </div>
+          <!-- !!/PORTFOLIO DEVICES!! -->
+
+          <!-- !!PORTFOLIO DEVICES!! -->
+          <div
+            id="pediatrics"
+            class="portfolio-devices collapse animated fadeIn faster"
+            data-parent="#app-toggle"
+          >
+            <h2 class="text-center title pt-5 pb-4">
+              PediatricS
+            </h2>
+            <p class="text-center description">
+              Our hearing devices for children and teens help them grow, thrive,
+              and learn by improving speech understanding to help them meet
+              their developmental needs.
+            </p>
+            <div class="device-list d-flex justify-content-center">
+              <!-- DEVICE -->
+              <div class="device d-flex flex-column align-items-center">
+                <div
+                  class="content-wrapper d-flex flex-column align-items-center"
+                >
+                  <h4>Oticon Opn Play</h4>
+                  <img
+                    src="/images/devices/pediatrics/Oticon_Opn_Play_Product_Image.png"
+                    alt="Oticon Opn Play"
+                    class="img-fluid w-100"
+                  />
+                  <div class="description text-center">
+                    <h6>Behind the Ear</h6>
+                    <p>
+                      Redefines child-friendly hearing care by introducing the
+                      open sound experience for children.
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    aria-controls="pediatrics-oticon-opn-play"
+                    aria-expanded="false"
+                    href="#pediatrics-oticon-opn-play"
+                  >
+                    Select
+                  </button>
+                </div>
+              </div>
+              <!-- /DEVICE -->
+
+              <!-- DEVICE -->
+              <div class="device d-flex flex-column align-items-center">
+                <div
+                  class="content-wrapper d-flex flex-column align-items-center"
+                >
+                  <h4>Oticon Opn Play</h4>
+                  <img
+                    src="/images/devices/pediatrics/Oticon_Opn_Play_Recharageble_Product_Image.png"
+                    alt="Oticon Opn Play"
+                    class="img-fluid w-100"
+                  />
+                  <div class="description text-center">
+                    <h6>Behind the Ear Rechargable</h6>
+                    <p>
+                      A state of the art rechargeable option for the hearing aid
+                      that introduced the open sound experience for pediatric
+                      patients.
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-primary">
+                    Select
+                  </button>
+                </div>
+              </div>
+              <!-- /DEVICE -->
+
+              <!-- DEVICE -->
+              <div class="device d-flex flex-column align-items-center">
+                <div
+                  class="content-wrapper d-flex flex-column align-items-center"
+                >
+                  <h4>Oticon Xceed Play</h4>
+                  <img
+                    src="/images/devices/pediatrics/Oticon_Xceed_Play_Product_Image.png"
+                    alt="Oticon Xceed Play"
+                    class="img-fluid w-100"
+                  />
+                  <div class="description text-center">
+                    <h6>Super and Ultra power</h6>
+                    <p>
+                      Help pediatric power users hear more and provides better
+                      conditions for speech understanding and language
+                      development.
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-primary">
+                    Select
+                  </button>
+                </div>
+              </div>
+              <!-- /DEVICE -->
+            </div>
+          </div>
+          <!-- !!/PORTFOLIO DEVICES!! -->
+
+          <!-- !!PORTFOLIO DEVICES!! -->
+          <div
+            id="power-users"
+            class="portfolio-devices collapse animated fadeIn faster"
+            data-parent="#app-toggle"
+          >
+            <h2 class="text-center title pt-5 pb-4">
+              Power users
+            </h2>
+            <p class="text-center description">
+              The world’s most powerful hearing aid gives your patients access
+              to more speech than ever before to help reduce the listening
+              effort this patient population struggles with each day.
+            </p>
+            <div class="device-list d-flex justify-content-center">
+              <!-- DEVICE -->
+              <div class="device d-flex flex-column align-items-center">
+                <div
+                  class="content-wrapper d-flex flex-column align-items-center"
+                >
+                  <h4>Oticon Xceed</h4>
+                  <img
+                    src="/images/devices/power-users/Oticon_Xceed_Product_Image.png"
+                    alt="Oticon Xceed"
+                    class="img-fluid w-100"
+                  />
+                  <div class="description text-center">
+                    <h6>Super and Ultra power</h6>
+                    <p>
+                      Supporting sentence: Xceed provides more access to speech
+                      than ever before for your patients with severe-to-profound
+                      hearing loss.
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-primary">
+                    Select
+                  </button>
+                </div>
+              </div>
+              <!-- /DEVICE -->
+            </div>
+          </div>
+          <!-- !!/PORTFOLIO DEVICES!! -->
+
+          <!-- !!PORTFOLIO DEVICES!! -->
+          <div
+            id="single-sided-deafness"
+            class="portfolio-devices collapse animated"
+            data-parent="#app-toggle"
+          >
+            <h2 class="text-center title pt-5 pb-4">
+              Single-sided deafness
+            </h2>
+            <p class="text-center description">
+              The world’s first CROS/BiCROS solution that supports speech
+              awareness and wireless streaming at the same time, providing a
+              revolutionary sound experience for patients with single-sided
+              deafness.
+            </p>
+            <div class="device-list d-flex justify-content-center">
+              <!-- DEVICE -->
+              <div class="device d-flex flex-column align-items-center">
+                <div
+                  class="content-wrapper d-flex flex-column align-items-center"
+                >
+                  <h4>Oticon CROS</h4>
+                  <img
+                    src="/images/devices/single-sided-deafness/Oticon_CROS_Product_Image.png"
+                    alt="Oticon CROS"
+                    class="img-fluid w-100"
+                  />
+                  <div class="description text-center">
+                    <h6>Behind the ear miniRITE T</h6>
+                    <p>
+                      Compatible with Oticon’s premium product families:
+                      <a href="" target="_blank">Opn S</a>,
+                      <a href="" target="_blank">Opn Play</a>,
+                      <a href="" target="_blank">Xceed</a> and
+                      <a href="" target="_blank">Xceed Play</a>.
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-primary">
+                    Select
+                  </button>
+                </div>
+              </div>
+              <!-- /DEVICE -->
+            </div>
+          </div>
+          <!-- !!/PORTFOLIO DEVICES!! -->
+        </div>
+      </div>
+    </div>
+    <!-- *****/DEVICES***** -->
+
+    <!-- *****POPUPS***** -->
+    <div class="popup animation slideInUp" id="pediatrics-oticon-opn-play">
+      <nav>
+        <div
+          class="container-fluid d-flex justify-content-end align-items-center"
+        >
+          <p>
+            Close
+            <img src="/images/close-icon.png" alt="Close" />
+          </p>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="container-fluid d-flex align-items-center">
+          <div class="device-image">
+            <img
+              src="/images/descriptions/Oticon_Opn_Play_miniRITE_aquamarine.png"
+              alt="Oticon Opn Play™"
+              class="img-fluid w-100"
+            />
+          </div>
+          <div class="description">
+            <h2>Oticon Opn Play™</h2>
+            <p>
+              Opn Play unleashes the full potential of open sound experience for
+              pediatric patients. The cutting-edge technology in Opn Play
+              hearing aids allows children to learn, grow, play and thrive with
+              a whole new way to hear sounds and increase speech understanding
+              in noise.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="features">
+        <div class="container-fluid">
+          <h3 class="text-center">
+            Opn Play redefines child-friendly hearing care
+          </h3>
+          <div class="features-list d-flex">
+            <ul>
+              <li>
+                <img
+                  src="/images/checkbox.png"
+                  alt="checkbox"
+                  class="d-inline"
+                />
+                Built on BrainHearing™ technology
+              </li>
+              <li>
+                <img
+                  src="/images/checkbox.png"
+                  alt="checkbox"
+                  class="d-inline"
+                />
+                Powered by the Velox S™ platform
+              </li>
+              <li>
+                <img
+                  src="/images/checkbox.png"
+                  alt="checkbox"
+                  class="d-inline"
+                />
+                Access to 360º of sound from the environment
+              </li>
+              <li>
+                <img
+                  src="/images/checkbox.png"
+                  alt="checkbox"
+                  class="d-inline"
+                />
+                OpenSound Navigator™ improves speech understanding in noisy
+                environments
+              </li>
+              <li>
+                <img
+                  src="/images/checkbox.png"
+                  alt="checkbox"
+                  class="d-inline"
+                />
+                Maximizes incidental learning
+              </li>
+              <li>
+                <img
+                  src="/images/checkbox.png"
+                  alt="checkbox"
+                  class="d-inline"
+                />
+                Maximizes incidental learning
+              </li>
+              <li>
+                <img
+                  src="/images/checkbox.png"
+                  alt="checkbox"
+                  class="d-inline"
+                />
+                Truly makes sense of the world with a full, balanced soundscape
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <img
+                  src="/images/checkbox.png"
+                  alt="checkbox"
+                  class="d-inline"
+                />
+                Maximizes incidental learning
+              </li>
+              <li>
+                <img
+                  src="/images/checkbox.png"
+                  alt="checkbox"
+                  class="d-inline"
+                />
+                Truly makes sense of the world with a full, balanced soundscape
+              </li>
+              <li>
+                <img
+                  src="/images/checkbox.png"
+                  alt="checkbox"
+                  class="d-inline"
+                />
+                Easy wireless connectivity via 2.4 GHz Bluetooth low energy
+                technology
+                <ul>
+                  <li>
+                    Connects seamlessly to any modern smartphone or tablet
+                  </li>
+                  <li>
+                    Classroom connectivity options to support learning
+                  </li>
+                  <li>
+                    Partner with Oticon EduMic {link} for a learning edge
+                  </li>
+                  <li>
+                    Add the ConnectClip to wirelessly stream music, movies,
+                    phone calls, and more from patient’s devices to their
+                    hearing aids
+                  </li>
+                  <li>
+                    The ConnectClip remote microphone also allows for easier
+                    communication
+                  </li>
+                  <li>
+                    A wide range of features and controls with the Oticon ON App
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-primary text-center">
+              Discover Opn Play
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="featured-images container-fluid d-flex">
+        <img
+          src="/images/Oticon_Opn_Play_Image_1.png"
+          alt="Kids in school"
+          class="img-fluid w-100 pr-3"
+        />
+        <img
+          src="/images/Oticon_Opn_Play_Image_2.png"
+          alt="Mom driving in school"
+          class="img-fluid w-100 pl-3"
+        />
+      </div>
+      <!-- !!PORTFOLIO DEVICES!! -->
+      <div class="popup-devices">
+        <div class="container-fluid">
+          <div class="portfolio-devices">
+            <h2 class="text-center title pt-5 pb-4">
+              PediatricS
+            </h2>
+            <div class="device-list d-flex justify-content-center">
+              <!-- DEVICE -->
+              <div class="device d-flex flex-column align-items-center">
+                <div
+                  class="content-wrapper d-flex flex-column align-items-center"
+                >
+                  <h4>Oticon Opn Play</h4>
+                  <img
+                    src="/images/devices/pediatrics/Oticon_Opn_Play_Recharageble_Product_Image.png"
+                    alt="Oticon Opn Play"
+                    class="img-fluid w-100"
+                  />
+                  <div class="description text-center">
+                    <h6>Behind the Ear Rechargable</h6>
+                    <p>
+                      A state of the art rechargeable option for the hearing aid
+                      that introduced the open sound experience for pediatric
+                      patients.
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-primary">
+                    Select
+                  </button>
+                </div>
+              </div>
+              <!-- /DEVICE -->
+
+              <!-- DEVICE -->
+              <div class="device d-flex flex-column align-items-center">
+                <div
+                  class="content-wrapper d-flex flex-column align-items-center"
+                >
+                  <h4>Oticon Xceed Play</h4>
+                  <img
+                    src="/images/devices/pediatrics/Oticon_Xceed_Play_Product_Image.png"
+                    alt="Oticon Xceed Play"
+                    class="img-fluid w-100"
+                  />
+                  <div class="description text-center">
+                    <h6>Super and Ultra power</h6>
+                    <p>
+                      Help pediatric power users hear more and provides better
+                      conditions for speech understanding and language
+                      development.
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-primary">
+                    Select
+                  </button>
+                </div>
+              </div>
+              <!-- /DEVICE -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- !!/PORTFOLIO DEVICES!! -->
+    </div>
+    <!-- *****/POPUPS***** -->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function (b, o, i, l, e, r) {
@@ -160,6 +851,10 @@
     <script
       type="text/javascript"
       src="/node_modules/bootstrap/dist/js/bootstrap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="node_modules/mdbootstrap/js/mdb.min.js"
     ></script>
     <!-- endbuild -->
     <!-- build:js scripts/main.js -->
